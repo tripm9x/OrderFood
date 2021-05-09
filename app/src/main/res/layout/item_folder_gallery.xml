@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvImage"
+        android:layout_width="@dimen/img_size_largest"
+        android:layout_height="@dimen/img_size_largest"
+        android:layout_marginVertical="@dimen/img_padding_large"
+        android:layout_marginStart="@dimen/img_padding"
+        app:cardCornerRadius="@dimen/img_padding"
+        app:cardElevation="0dp"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:id="@+id/imgThumbFolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cvImage"
+        android:layout_marginStart="@dimen/space_screen_small"
+        android:layout_centerVertical="true">
+
+        <com.volio.order_food.widget.text.TextViewMedium
+            android:id="@+id/tvTitleFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black" />
+
+        <com.volio.order_food.widget.text.TextViewRegular
+            android:id="@+id/tvSizeFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginTop="@dimen/img_padding"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvTitleFolder" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

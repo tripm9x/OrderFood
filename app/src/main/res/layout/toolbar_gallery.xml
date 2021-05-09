@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/tbGallery"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.volio.order_food.widget.text.TextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_image"
+        android:textSize="@dimen/_16ssp"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/btnCloseGallery"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btnDoneGallery"
+        android:layout_marginStart="@dimen/_8sdp"  />
+
+    <com.volio.order_food.widget.IconView
+        android:id="@+id/btnCloseGallery"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_close"
+        android:layout_marginStart="@dimen/space_screen_small"
+        android:contentDescription="@string/app_name" />
+
+    <com.volio.order_food.widget.IconView
+        android:id="@+id/btnDoneGallery"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_done"
+        android:padding="@dimen/img_padding"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="@dimen/space_screen_small"
+        android:contentDescription="@string/app_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#D3D1D1"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

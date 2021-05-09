@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gh1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/volio_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gh1"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintEnd_toStartOf="@id/gv2"  />
+
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="0dp"
+        android:padding="@dimen/d10"
+        android:textColor="@color/white"
+        app:drawableTint="@color/white"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorTextTint"
+        android:hint="@string/txt_phone"
+        android:textSize="@dimen/text_size_normal"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="@dimen/d8"
+        app:layout_constraintTop_toBottomOf="@id/gh1"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintEnd_toEndOf="@id/gv2"
+        android:background="@drawable/bg_border_edt"
+        android:inputType="text"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorTextTint"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/white"
+        android:hint="@string/txt_password"
+        android:padding="@dimen/d10"
+        app:drawableTint="@color/white"
+        android:gravity="center_vertical"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/d8"
+        android:layout_marginTop="@dimen/d14"
+        app:layout_constraintTop_toBottomOf="@id/edtPhone"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintEnd_toEndOf="@id/gv2"
+        android:background="@drawable/bg_border_edt"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/btn_forgot_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d16"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="end"
+        android:text="@string/txt_forgot_password"
+        android:textColor="@color/white"
+        android:paddingHorizontal="@dimen/d10"
+        android:paddingVertical="@dimen/d4"
+        android:textSize="@dimen/text_size_xxsmall"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        app:layout_constraintEnd_toEndOf="@id/gv2" />
+
+    <TextView
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d16"
+        android:background="@drawable/bg_radius_8"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingVertical="@dimen/d10"
+        android:text="@string/txt_login"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_xnormal"
+        app:layout_constraintTop_toBottomOf="@id/btn_forgot_pass"
+        app:layout_constraintStart_toEndOf="@id/gv1"
+        app:layout_constraintEnd_toEndOf="@id/gv2" />
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/d16"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="end"
+        android:text="@string/txt_have_account"
+        android:textColor="@color/colorTextWhite"
+        android:paddingHorizontal="@dimen/d10"
+        android:paddingVertical="@dimen/d4"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintEnd_toEndOf="@id/gv2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gv1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

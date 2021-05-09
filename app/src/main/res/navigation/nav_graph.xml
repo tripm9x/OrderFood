@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFrag">
+
+    <fragment
+        android:id="@+id/splashFrag"
+        android:name="com.volio.order_food.view.SplashFrag"
+        android:label="SplashFrag" >
+        <action
+            android:id="@+id/action_splashFrag_to_homeFrag"
+            app:destination="@id/homeFrag" />
+        <action
+            android:id="@+id/action_splashFrag_to_loginFag"
+            app:destination="@id/loginFag" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.volio.order_food.view.HomeFrag"
+        android:label="HomeFrag" />
+    <fragment
+        android:id="@+id/registerFrag"
+        android:name="com.volio.order_food.view.RegisterFrag"
+        android:label="RegisterFrag" />
+    <fragment
+        android:id="@+id/loginFag"
+        android:name="com.volio.order_food.view.LoginFag"
+        android:label="LoginFag" >
+        <action
+            android:id="@+id/action_loginFag_to_registerFrag"
+            app:destination="@id/registerFrag" />
+        <action
+            android:id="@+id/action_loginFag_to_homeFrag"
+            app:destination="@id/homeFrag" />
+    </fragment>
+</navigation>

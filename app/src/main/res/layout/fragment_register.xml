@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/transparent_60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gh1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.30" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <ImageButton
+                android:id="@+id/btnBackRegister"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:src="@drawable/ic_back2"
+                android:background="@color/colorTransparent"
+                android:tint="@color/white"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/d10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/volio_logo"
+                app:layout_constraintTop_toBottomOf="@id/btnBackRegister"
+                app:layout_constraintBottom_toTopOf="@id/gh1"
+                app:layout_constraintStart_toEndOf="@id/gv1"
+                app:layout_constraintEnd_toStartOf="@id/gv2" />
+
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_user_name"
+                android:imeOptions="actionNext"
+                app:layout_constraintTop_toBottomOf="@id/gh1"
+                app:layout_constraintStart_toEndOf="@id/gv1"
+                app:layout_constraintEnd_toEndOf="@id/gv2"
+                app:drawableTint="@color/white"
+                android:drawableStart="@drawable/ic_name"
+                android:drawablePadding="@dimen/d8"
+                android:inputType="text"
+                android:maxLength="50"
+                android:padding="@dimen/d12"
+                android:background="@drawable/bg_border_edt"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextWhite"
+                android:textColorHint="@color/colorTextWhite"
+                android:textSize="@dimen/text_size_xnormal"
+                android:textCursorDrawable="@null" />
+
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_phone"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/d10"
+                app:layout_constraintTop_toBottomOf="@id/edtUsername"
+                app:layout_constraintStart_toEndOf="@id/gv1"
+                app:layout_constraintEnd_toEndOf="@id/gv2"
+                app:drawableTint="@color/white"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="@dimen/d8"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:padding="@dimen/d12"
+                android:background="@drawable/bg_border_edt"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextWhite"
+                android:textColorHint="@color/colorTextWhite"
+                android:textSize="@dimen/text_size_xnormal"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_password"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/d10"
+                app:layout_constraintTop_toBottomOf="@id/edtPhone"
+                app:layout_constraintStart_toEndOf="@id/gv1"
+                app:layout_constraintEnd_toEndOf="@id/gv2"
+                app:drawableTint="@color/white"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="@dimen/d8"
+                android:inputType="textPassword"
+                android:padding="@dimen/d12"
+                android:background="@drawable/bg_border_edt"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextWhite"
+                android:textColorHint="@color/colorTextWhite"
+                android:textSize="@dimen/text_size_xnormal"
+                android:textCursorDrawable="@null" />
+
+            <EditText
+                android:id="@+id/edtPasswordAgain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/txt_password_again"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/d10"
+                app:layout_constraintTop_toBottomOf="@id/edtPassword"
+                app:layout_constraintStart_toEndOf="@id/gv1"
+                app:layout_constraintEnd_toEndOf="@id/gv2"
+                app:drawableTint="@color/white"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="@dimen/d8"
+                android:inputType="textPassword"
+                android:padding="@dimen/d12"
+                android:background="@drawable/bg_border_edt"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/colorTextWhite"
+                android:textColorHint="@color/colorTextWhite"
+                android:textSize="@dimen/text_size_xnormal"
+                android:textCursorDrawable="@null" />
+
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:background="@drawable/bg_radius_8"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_xnormal"
+                android:paddingVertical="@dimen/d10"
+                android:text="@string/txt_register"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTextBlack"
+                app:layout_constraintTop_toBottomOf="@id/edtPasswordAgain"
+                app:layout_constraintStart_toEndOf="@id/gv1"
+                app:layout_constraintEnd_toEndOf="@id/gv2" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861069188124",
+    "project_id": "volio-food",
+    "storage_bucket": "volio-food.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861069188124:android:7a0bcd05696beae80f93d9",
+        "android_client_info": {
+          "package_name": "com.volio.order_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861069188124-vpr06eq77gc1g204u8r5tnpl9ju617pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA63Uz7_3IfPLkKLyq3inqQYlvV1hqAFP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861069188124-vpr06eq77gc1g204u8r5tnpl9ju617pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

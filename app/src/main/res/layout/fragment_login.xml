@@ -21,14 +21,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        app:layout_constraintGuide_percent="0.85" />
 
 
 
@@ -47,8 +47,8 @@
         android:id="@+id/edtPhone"
         android:layout_width="0dp"
         android:padding="@dimen/d10"
-        android:textColor="@color/white"
-        app:drawableTint="@color/white"
+        android:textColor="@color/text_white"
+        app:drawableTint="@color/text_white"
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorTextTint"
         android:hint="@string/txt_phone"
@@ -56,6 +56,7 @@
         android:gravity="center_vertical"
         android:drawableStart="@drawable/ic_phone"
         android:drawablePadding="@dimen/d8"
+
         app:layout_constraintTop_toBottomOf="@id/gh1"
         app:layout_constraintStart_toEndOf="@id/gv1"
         app:layout_constraintEnd_toEndOf="@id/gv2"
@@ -69,14 +70,14 @@
         android:layout_height="wrap_content"
         android:textColorHint="@color/colorTextTint"
         android:textSize="@dimen/text_size_normal"
-        android:textColor="@color/white"
+        android:textColor="@color/text_white"
         android:hint="@string/txt_password"
         android:padding="@dimen/d10"
-        app:drawableTint="@color/white"
+        app:drawableTint="@color/text_white"
         android:gravity="center_vertical"
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="@dimen/d8"
-        android:layout_marginTop="@dimen/d14"
+        android:layout_marginTop="@dimen/d16"
         app:layout_constraintTop_toBottomOf="@id/edtPhone"
         app:layout_constraintStart_toEndOf="@id/gv1"
         app:layout_constraintEnd_toEndOf="@id/gv2"
@@ -88,12 +89,12 @@
         android:id="@+id/btn_forgot_pass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/d16"
+        android:layout_marginTop="@dimen/d12"
         android:clickable="true"
         android:focusable="true"
         android:gravity="end"
         android:text="@string/txt_forgot_password"
-        android:textColor="@color/white"
+        android:textColor="@color/text_white"
         android:paddingHorizontal="@dimen/d10"
         android:paddingVertical="@dimen/d4"
         android:textSize="@dimen/text_size_xxsmall"
@@ -104,7 +105,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/d16"
+        android:layout_marginTop="@dimen/d12"
         android:background="@drawable/bg_radius_8"
         android:clickable="true"
         android:focusable="true"
@@ -127,7 +128,7 @@
         android:focusable="true"
         android:gravity="end"
         android:text="@string/txt_have_account"
-        android:textColor="@color/colorTextWhite"
+        android:textColor="@color/text_white"
         android:paddingHorizontal="@dimen/d10"
         android:paddingVertical="@dimen/d4"
         android:textSize="@dimen/text_size_normal"

@@ -20,7 +20,7 @@
         android:label="HomeFrag" />
     <fragment
         android:id="@+id/registerFrag"
-        android:name="com.volio.order_food.view.RegisterFrag"
+        android:name="com.volio.order_food.view.register.RegisterFrag"
         android:label="RegisterFrag" />
     <fragment
         android:id="@+id/loginFag"
